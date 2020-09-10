@@ -2,7 +2,7 @@
 var tableData = data;
 
 var tbody = d3.select("tbody");
-
+var form=d3.select("form")
 var button= d3.select("button");
 
 
@@ -39,5 +39,5 @@ function runEnter() {
 };
 
 
-userinput.on("change", runEnter);
+form.on("submit", runEnter);
 button.on("click", runEnter); 
