@@ -6,7 +6,7 @@ var form=d3.select("form")
 var button= d3.select("button");
 
 
-// YOUR CODE HERE!
+// table
 tableData.forEach((table_enter) => {
   var tbody = d3.select("tbody");
     var row = tbody.append("tr");
@@ -17,9 +17,8 @@ tableData.forEach((table_enter) => {
     });
 
 
-
+// selection function 
 function runEnter() {
-      // remove any children from the list to
      d3.event.preventDefault();
      tbody.html("");
 
